@@ -1,0 +1,63 @@
+Параметры
+
+    'g_Na': 150.0,  # Increase sodium conductance to make the system more excitable
+    'g_K': 20.0,  # Decrease potassium conductance to reduce repolarization
+    'g_L': 0.1,  # Decrease leakage conductance to reduce resting membrane potential
+    'E_Na': 55.0,  # Increase sodium reversal potential to make the system more excitable
+    'E_K': -70.0,  # Decrease potassium reversal potential to reduce repolarization
+    'E_L': -50.0,  # Decrease leakage reversal potential to reduce resting membrane potential
+    'C_m': 0.5  # Decrease membrane capacitance to increase the speed of membrane potential changes
+
+
+Тест 1
+Enter the maximum time (ms): 1500
+Enter the time step (ms): 0.0001
+Method PK2: MSE = 0.0875, MAE = 0.0902, RMSE = 0.2958, R2 = 0.9999, MAPE = 41.9588%
+Method PK2 Zukov: MSE = 0.0009, MAE = 0.0091, RMSE = 0.0302, R2 = 1.0000, MAPE = 2.2638%
+Method PK2 Zukov Direct: MSE = 0.0081, MAE = 0.0246, RMSE = 0.0902, R2 = 1.0000, MAPE = 15.3289%
+Method PK2 Zukov Original:MSE = 0.0016, MAE = 0.0117, RMSE = 0.0397, R2 = 1.0000, MAPE = 2.0180%
+
+Тест 2
+Enter the maximum time (ms): 1000
+Enter the time step (ms): 0.01
+Method PK2: MSE = 88.4670, MAE = 2.8985, RMSE = 9.4057, R2 = 0.9061, MAPE = 53.5487%
+Method PK2 Zukov: MSE = 0.0012, MAE = 0.0110, RMSE = 0.0350, R2 = 1.0000, MAPE = 0.3612%
+Method PK2 Zukov Direct: MSE = 0.0011, MAE = 0.0111, RMSE = 0.0335, R2 = 1.0000, MAPE = 0.2994%
+Method PK2 Zukov Original:MSE = 0.0405, MAE = 0.0555, RMSE = 0.2012, R2 = 1.0000, MAPE = 1.8681%
+
+Параметры
+
+    'g_Na': 100.0,  # Increase sodium conductance to make the system more excitable
+    'g_K': 40.0,  # Decrease potassium conductance to reduce repolarization
+    'g_L': 0.2,  # Decrease leakage conductance to reduce resting membrane potential
+    'E_Na': 52.0,  # Increase sodium reversal potential to make the system more excitable
+    'E_K': -75.0,  # Decrease potassium reversal potential to reduce repolarization
+    'E_L': -52.0,  # Decrease leakage reversal potential to reduce resting membrane potential
+    'C_m': 0.5  # Decrease membrane capacitance to increase the speed of membrane potential changes
+
+
+Тест 1
+Enter the maximum time (ms): 1000
+Enter the time step (ms): 0.01
+Method PK2: MSE = 10.7216, MAE = 0.2485, RMSE = 3.2744, R2 = -75.6171, MAPE = 0.3752%
+Method PK2 Zukov: MSE = 0.0000, MAE = 0.0003, RMSE = 0.0005, R2 = 1.0000, MAPE = 0.0005%
+Method PK2 Zukov Direct: MSE = 0.0000, MAE = 0.0007, RMSE = 0.0009, R2 = 1.0000, MAPE = 0.0011%
+Method PK2 Zukov Original:MSE = 0.0000, MAE = 0.0010, RMSE = 0.0012, R2 = 1.0000, MAPE = 0.0015%
+
+Параметры
+
+    'g_Na': 100.0,  # Increase sodium conductance to make the system more excitable
+    'g_K': 40.0,  # Decrease potassium conductance to reduce repolarization
+    'g_L': 0.2,  # Decrease leakage conductance to reduce resting membrane potential
+    'E_Na': 52.0,  # Increase sodium reversal potential to make the system more excitable
+    'E_K': -75.0,  # Decrease potassium reversal potential to reduce repolarization
+    'E_L': -52.0,  # Decrease leakage reversal potential to reduce resting membrane potential
+    'C_m': 2.0  # Decrease membrane capacitance to increase the speed of membrane potential changes
+
+Тест 1
+Enter the maximum time (ms): 1000
+Enter the time step (ms): 0.01
+Method PK2: MSE = 5.3232, MAE = 0.1246, RMSE = 2.3072, R2 = 0.5237, MAPE = 0.9711%
+Method PK2 Zukov: MSE = 0.0108, MAE = 0.0055, RMSE = 0.1039, R2 = 0.9990, MAPE = 0.0510%
+Method PK2 Zukov Direct: MSE = 0.0381, MAE = 0.0102, RMSE = 0.1953, R2 = 0.9966, MAPE = 0.0957%
+Method PK2 Zukov Original:MSE = 0.1086, MAE = 0.0156, RMSE = 0.3295, R2 = 0.9903, MAPE = 0.1523%
